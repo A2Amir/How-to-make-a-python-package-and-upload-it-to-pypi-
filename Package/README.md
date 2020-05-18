@@ -57,4 +57,4 @@ The process uses to create Bionomial, Distribution Gaussians for adding and repr
       binomial_sum = binomial_one + binomial_two
       
 # 5. Author <a name="licensing"></a>
-	Copyright (c) 200 Amir-Ziaee 
+	Copyright (c)  Amir-Ziaee 
