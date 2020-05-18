@@ -36,7 +36,7 @@
 
 * Once you have all the files set up correctly, you can use the following commands on the command line (note that you need to make the name of the package unique, for example the change of the name of my package from Gaussian_Bionomial_Distributions to something else. That means changing the information in setup.py and the folder name):
 
-* cd to setup.py directory.
+* cd to setup.py directory(for example here cd Package).
 * Run **python setup.py sdist**
 * Run **pip install twine**
 
