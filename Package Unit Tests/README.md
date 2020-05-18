@@ -1,4 +1,4 @@
-To catch these errors, we have to check for the quality and accuracy and the quality of your code. Proper testing is necessary to avoid unexpected surprises and have confidence in your results.
+#### To catch these errors, we have to check for the quality and accuracy and the quality of your code. Proper testing is necessary to avoid unexpected surprises and have confidence in your results.
 
 * TEST DRIVEN DEVELOPMENT: a development process where you write tests for tasks before you even write the code to implement those tasks.
 
@@ -10,3 +10,7 @@ To catch these errors, we have to check for the quality and accuracy and the qua
 
 * UNIT TEST: a type of test that covers a “unit” of code, usually a single function, independently from the rest of the program.
   * The advantage of unit tests is that they are isolated from the rest of your program, and thus, no dependencies are involved. They don't require access to databases, APIs, or other external sources of information. However, passing unit tests isn’t always enough to prove that our program is working successfully.
+
+#### to run the rest code, use the command below:
+     
+     python test.py
