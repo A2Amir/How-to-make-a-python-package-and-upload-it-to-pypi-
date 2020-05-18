@@ -1,5 +1,5 @@
-# How to make a python pakage and upload it to pypi 
-## A. Make a python pakage 
+# How to make a python package and upload it to pypi 
+## A. Make a python package 
 ### 1. First modular(separating code into different files) your codes.
 ### 2. A Python package also needs an __init__.py file. In this [example](https://github.com/A2Amir/How-to-make-a-python-pakage-and-upload-it-to-pypi-/tree/master/Package/Gaussian_Bionomial_Distributions), you can see how modularized codes look like and how to create this __init__.py file.
 
