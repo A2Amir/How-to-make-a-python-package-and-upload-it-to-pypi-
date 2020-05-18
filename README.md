@@ -1,5 +1,5 @@
 # How to make a python pakage and upload it to pypi 
- 
+## make a python pakage 
 ### 1. First modular(separating code into different files) your codes.
 ### 2. A Python package also needs an __init__.py file. In this [example](https://github.com/A2Amir/How-to-make-a-python-pakage-and-upload-it-to-pypi-/tree/master/Package/Gaussian_Bionomial_Distributions), you can see how modularized codes look like and how to create this __init__.py file
 
@@ -22,7 +22,7 @@
      
    ~~~
      
-# Putting Code on PyPi
+## Putting Code on PyPi
 
 ### PyPi vs. Test PyPi:
 * Note that [pypi.org](https://pypi.org) and [test.pypy.org](https://test.pypi.org) are two different websites. You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.Also, remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
