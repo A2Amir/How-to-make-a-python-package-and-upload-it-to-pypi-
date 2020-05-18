@@ -4,23 +4,26 @@
 
 1. [Installation](#installation)
 3. [File Descriptions](#files)
-2. [Using Process](#motivation)
+2. [Use Process](#motivation)
 4. [Author](#licensing)
 
 # 1. Installation <a name="installation"></a>
 
-To install via pip , use the command below, it will automatically install all the liberary used in this Repo.
+To install via pip , use the command below, it will automatically install  the package coded in this Repo.
 
-		pip install 
+		pip install .
         
         
 # 2. File Descriptions <a name="files"></a>
 
-Links to the corresponding codes, which are stored in the [Code]() folder.
+Links to the corresponding codes, which are stored in the [Code](https://github.com/A2Amir/How-to-make-a-python-package-and-upload-it-to-pypi-/tree/master/Package/Gaussian_Bionomial_Distributions) folder.
 
-# 3. Data Science Process <a name="motivation"></a>
+# 3. Use Process <a name="motivation"></a>
 
 The process uses to create Bionomial, Distribution Gaussians for adding and representing them.
+
+      from Gaussian_Bionomial_Distributions import Gaussian
+      from Gaussian_Bionomial_Distributions import Binomial
 
       gaussian = Gaussian(25, 2)
 
