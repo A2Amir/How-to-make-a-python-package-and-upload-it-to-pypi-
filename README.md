@@ -8,7 +8,7 @@
 * A **setup.py** file, which is required in order to use pip install
 * A folder name, for me called **'Gaussian_Bionomial_Distributions'**, which is the name of the Python package and inside it are modularized codes and an **__init__.py** file. see this [example](https://github.com/A2Amir/How-to-make-a-python-pakage-and-upload-it-to-pypi-/tree/master/Package/Gaussian_Bionomial_Distributions).
 
-### 3. In the python package directory you can use this command ***{pip install .}*** to install the package into your local Python installation.
+### 3. In [the python package folder](https://github.com/A2Amir/How-to-make-a-python-pakage-and-upload-it-to-pypi-/tree/master/Package) you can use this command ***{pip install .}*** to install the package into your local Python installation.
 
  * Notice if you create a conda environment, activate the environment, and then use this command {pip install .} to install the distributions package, you'll find that the system installs your package [globally rather than in your local conda environment](https://github.com/ContinuumIO/anaconda-issues/issues/1429). However, if you create the conda environment and install pip simultaneously, you'll find that pip behaves as expected installing packages into your local environment
  
@@ -49,3 +49,21 @@
 
 ### command to install the uploaded package from the pypi repository
 * pip install Gaussian_Bionomial_Distributions
+
+## More PyPi Resources
+This link has a good tutorial on distributing Python packages including more configuration options for your **setup.py** file: [tutorial on distributing packages](https://packaging.python.org/tutorials/distributing-packages/). You'll notice that the python command to run the setup.py is slightly different with 
+
+    python3 setup.py sdist bdist_wheel
+   
+This command will still output a folder called **dist**. The difference is that you will get both a **.tar.gz** file and a **.whl** file. The **.tar.gz** file is called a source archive whereas the **.whl** file is a built distribution. The **.whl** file is a newer type of installation file for Python packages. When you pip install a package, pip will first look for a whl file (wheel file) and if there isn't one, will then look for the tar.gz file. 
+
+A tar.gz file, ie an sdist, contains the files needed to [compile](https://en.wikipedia.org/wiki/Compiler) and install a Python package. A whl file, ie a built distribution, only needs to be copied to the proper place for installation. Behind the scenes, pip installing a whl file has fewer steps than a tar.gz file.
+
+###  For a much more detailed explanation of distributing Python packages, check out the documentation on Distutils. 
+1.	[Introduction](https://docs.python.org/3/distutils/introduction.html)
+2.	[setup.py script](https://docs.python.org/3/distutils/setupscript.html)
+3.	[config file](https://docs.python.org/3/distutils/configfile.html)
+4.	[source distributions](https://docs.python.org/3/distutils/sourcedist.html)
+5.	[built distributions](https://docs.python.org/3/distutils/builtdist.html)
+6.	[uploading to PyPi](https://docs.python.org/3/distutils/packageindex.html)
+
