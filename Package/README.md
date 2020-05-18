@@ -12,7 +12,7 @@
 To install via Repo , download the Repository and use the command below, it will automatically install  the package coded in this Repo.
 
 		pip install .
-Or use the command below to downlaod the uploaded package from [my pypi account](https://pypi.org/manage/projects/)
+Or use the command below to downlaod the uploaded package from [my pypi account](https://pypi.org/project/Gaussian-Bionomial-Distributions/)
 
 		pip install Gaussian_Bionomial_Distributions
         
