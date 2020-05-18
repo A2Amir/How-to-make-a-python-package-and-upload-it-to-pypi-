@@ -24,6 +24,28 @@
      
 # Putting Code on PyPi
 
-### PyPi vs. Test PyPi
-Note that [pypi.org]() and [test.pypy.org]() are two different websites. You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.Also, remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
+### PyPi vs. Test PyPi:
+* Note that [pypi.org](https://pypi.org) and [test.pypy.org](https://test.pypi.org) are two different websites. You'll need to register separately at each website. If you only register at pypi.org, you will not be able to upload to the test.pypy.org repository.Also, remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
 
+* Remember that your package name must be unique. If you use a package name that is already taken, you will get an error when trying to upload the package.
+
+### Summary of the Terminal Commands Used
+
+
+* You'll need to create a **setup.cfg** file, **README.md file**, and **license.txt** file. You'll also need to create accounts for the pypi test repository and pypi repository. Don't forget to keep your passwords; you'll need to type them into the command line.
+
+* Once you have all the files set up correctly, you can use the following commands on the command line (note that you need to make the name of the package unique, for example the change of the name of my package from Gaussian_Bionomial_Distributions to something else. That means changing the information in setup.py and the folder name):
+
+* cd Package
+* Run **python setup.py sdist**
+* Run **pip install twine**
+
+### commands to upload to the pypi test repository
+* twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+* pip install --index-url https://test.pypi.org/simple/ Gaussian_Bionomial_Distributions
+
+### command to upload to the pypi repository
+* twine upload dist/*
+
+### command to install the uploaded package from the pypi repository
+* pip install Gaussian_Bionomial_Distributions
